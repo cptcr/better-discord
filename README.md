@@ -45,7 +45,6 @@ To use the themes and plugins from this repository, you first need to install Be
 
 1. **Glassmorphism Theme**
    - Description: A dark-themed, rounded border design with floating animations and a glass-like look.
-   - File: `glassmorphism-theme.css`
 
 ## Plugins
 
