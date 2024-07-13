@@ -1,0 +1,123 @@
+/**
+ * @name Futuristic and elegant
+ * @version 1.0.0
+ * @description A futuristic and elegant theme for your discord client
+ * @author cptcr
+ *
+ * @website https://cptcr.cc
+ * @invite cptcr
+ */
+
+:root {
+    --background-primary: #1E1E2E;
+    --background-secondary: #2E2E3E;
+    --background-tertiary: #3E3E4E;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0C0;
+    --accent-color: #FF4081;
+    --border-radius: 8px;
+}
+
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+/* Server List */
+.guilds-wrapper {
+    background-color: var(--background-secondary);
+    padding: 10px;
+}
+
+.guild {
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+}
+
+.guild .guild-inner {
+    border-radius: var(--border-radius);
+}
+
+/* Channel List */
+.channels-wrap {
+    background-color: var(--background-secondary);
+}
+
+.containerDefault-3WbVG9 .container-1NXEtd {
+    margin: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--background-tertiary);
+}
+
+/* Channel Messages */
+.message-2qnXI6 {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid var(--background-tertiary);
+}
+
+.messageContent-2t3eCI {
+    color: var(--text-primary);
+}
+
+/* Chat Textbox */
+.textarea-2Spzkt {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    margin: 10px;
+}
+
+/* User List */
+.membersWrap-3NUR2t {
+    background-color: var(--background-secondary);
+}
+
+.member-3-YXUe {
+    margin: 5px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+}
+
+.member-3-YXUe:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Modals */
+.modal-3HOjGZ {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+/* Buttons */
+.button-38aScr {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-38aScr:hover {
+    background-color: lighten(var(--accent-color), 10%);
+}

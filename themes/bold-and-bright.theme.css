@@ -1,0 +1,150 @@
+/**
+ * @name Bold and Bright
+ * @version 1.0.0
+ * @description A bold and bright theme with contrasting colors for a lively and energetic vibe.
+ * @author cptcr
+ *
+ * @website https://cptcr.cc
+ * @invite cptcr
+ */
+
+
+:root {
+    --background-primary: #1A1A1D;
+    --background-secondary: #4E4E50;
+    --background-tertiary: #6F2232;
+    --text-primary: #FFFFFF;
+    --text-secondary: #C5C6C7;
+    --accent-color: #950740;
+    --border-radius: 20px;
+}
+
+/* General Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary);
+    color: var (--text-primary);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+/* Server List */
+.guilds-wrapper {
+    background-color: var(--background-secondary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.guild {
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+    transition: transform 0.3s;
+}
+
+.guild:hover {
+    transform: scale(1.05);
+    background-color: var(--background-tertiary);
+}
+
+.guild .guild-inner {
+    border-radius: var(--border-radius);
+}
+
+/* Channel List */
+.channels-wrap {
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.containerDefault-3WbVG9 {
+    padding: 0;
+}
+
+.container-1NXEtd {
+    margin: 0;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--background-tertiary);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+}
+
+.container-1NXEtd:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Channel Messages */
+.message-2qnXI6 {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid var(--background-tertiary);
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius);
+}
+
+.messageContent-2t3eCI {
+    color: var(--text-primary);
+}
+
+/* Chat Textbox */
+.textarea-2Spzkt {
+    background-color: var(--background-tertiary);
+    color: var (--text-primary);
+    border-radius: var(--border-radius);
+    margin: 10px;
+}
+
+/* User List */
+.membersWrap-3NUR2t {
+    background-color: var(--background-secondary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.member-3-YXUe {
+    margin: 5px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.member-3-YXUe:hover {
+    background-color: var(--background-tertiary);
+    transform: scale(1.05);
+}
+
+/* Modals */
+.modal-3HOjGZ {
+    background-color: var(--background-primary);
+    color: var (--text-primary);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+/* Buttons */
+.button-38aScr {
+    background-color: var(--accent-color);
+    color: var (--text-primary);
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-38aScr:hover {
+    background-color: #6B0F1A;
+}
