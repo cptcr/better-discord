@@ -1,0 +1,314 @@
+/**
+ * @name Discord Mobile UI
+ * @version 1.6.0
+ * @description Discord Desktop with a clean, mobile-inspired UI
+ * @author cptcr
+ *
+ * @website https://cptcr.cc
+ * @invite cptcr
+ */
+
+/* General Styling */
+:root {
+    --border-radius: 10px;
+    --transition-duration: 0.3s;
+    --hover-scale: 1.05;
+    --background-color: rgba(32, 34, 37, 0.85);
+    --hover-background-color: rgba(47, 49, 54, 0.85);
+    --text-color: #ffffff;
+    --box-shadow-color: rgba(0, 0, 0, 0.3);
+    --backdrop-filter: blur(10px);
+    --spacing: 20px;
+    --padding: 15px;
+    --channel-padding: 12px;
+    --guild-padding: 12px;
+    --member-padding: 12px;
+    --message-padding: 12px;
+    --input-padding: 12px;
+    --button-padding: 12px;
+    --navbar-height: 60px;
+}
+
+/* General */
+* {
+    border-radius: var(--border-radius) !important;
+    transition: all var(--transition-duration) ease-in-out !important;
+}
+
+body {
+    background-color: #18191c !important;
+    color: var(--text-color) !important;
+}
+
+/* Glassmorphism Effect */
+.glassmorphic {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Account Box */
+.accountDetails-3mnIDi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding) !important;
+    margin: var(--spacing) !important;
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.accountDetails-3mnIDi .avatar-3uk_u9 {
+    flex-shrink: 0;
+    margin-right: var(--spacing) !important;
+}
+
+.accountDetails-3mnIDi .nameTag-1p7gGo {
+    flex-grow: 1;
+    margin-right: var(--spacing) !important;
+}
+
+.accountDetails-3mnIDi .nameTag-1p7gGo .username-2b1r56 {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--text-color) !important;
+}
+
+.accountDetails-3mnIDi .nameTag-1p7gGo .status-2EFH5t {
+    display: block;
+    font-size: 0.9em;
+    color: var(--text-color) !important;
+}
+
+.accountDetails-3mnIDi .buttons-3JBrkn {
+    display: flex;
+    align-items: center;
+}
+
+.accountDetails-3mnIDi .buttons-3JBrkn .button-38aScr {
+    margin-left: var(--spacing) !important;
+    padding: 8px 12px;
+    background-color: var(--hover-background-color) !important;
+    color: var(--text-color) !important;
+    border: none;
+    border-radius: var(--border-radius) !important;
+    cursor: pointer;
+}
+
+.accountDetails-3mnIDi .buttons-3JBrkn .button-38aScr:hover {
+    background-color: var(--hover-background-color) !important;
+    transform: scale(var(--hover-scale));
+}
+
+/* Channel List */
+.container-2cd8Mz {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--channel-padding) !important;
+    margin: var(--spacing) !important;
+}
+
+.container-2cd8Mz:hover {
+    transform: scale(var(--hover-scale));
+    background-color: var(--hover-background-color) !important;
+}
+
+/* Server List */
+.guilds-1y3tR6 .guildsWrapper-5TJh6A {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--guild-padding) !important;
+    margin: var(--spacing) !important;
+}
+
+.guilds-1y3tR6 .guildsWrapper-5TJh6A:hover {
+    transform: scale(var(--hover-scale));
+    background-color: var(--hover-background-color) !important;
+}
+
+/* User List */
+.membersWrap-2h-GB4 {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--member-padding) !important;
+    margin: var(--spacing) !important;
+}
+
+.membersWrap-2h-GB4:hover {
+    transform: scale(var(--hover-scale));
+    background-color: var(--hover-background-color) !important;
+}
+
+/* Message Bubbles */
+.message-2qnXI6 {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    margin-bottom: var(--spacing) !important;
+    padding: var(--message-padding) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.message-2qnXI6:hover {
+    transform: scale(var(--hover-scale));
+    background-color: var(--hover-background-color) !important;
+}
+
+/* Input Box */
+.textArea-2Spzkt {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    color: var(--text-color) !important;
+    padding: var(--input-padding) !important;
+    margin-top: var(--spacing) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.textArea-2Spzkt:focus {
+    transform: scale(1.02);
+    background-color: var(--hover-background-color) !important;
+}
+
+/* Buttons */
+.button-38aScr {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    color: var(--text-color) !important;
+    padding: var(--button-padding) !important;
+    margin-top: var(--spacing) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.button-38aScr:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-background-color) !important;
+}
+
+/* Sidebar */
+.sidebar-2K8pFh {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Headers */
+.header-2yLD_y {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tooltips */
+.tooltip-2QfLtc {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Context Menus */
+.contextMenu-HLZMGh {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Popouts */
+.popout-2iWAc- {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Modals */
+.modal-3HOjGZ {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin-bottom: var(--spacing) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hover-background-color);
+    border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-color);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--background-color) !important;
+    box-shadow: 0 -2px 10px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    z-index: 1000;
+}
+
+.navbar .icon {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+/* Specific Components */
+.channelHeader-1aUz7V, .chat-3bRxxu, .title-3qD0b- {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin: var(--spacing) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.channel-2QD9_O .header-2yLD_y, .members-1998pB, .sidebar-2K8pFh, .messageListItem-ZZ7v6g {
+    background-color: var(--background-color) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    box-shadow: 0 4px 20px var(--box-shadow-color) !important;
+    padding: var(--padding) !important;
+    margin: var(--spacing) !important;
+    border-radius: var(--border-radius) !important;
+}
+
+.channel-2QD9_O .header-2yLD_y:hover, .members-1998pB:hover, .sidebar-2K8pFh:hover, .messageListItem-ZZ7v6g:hover {
+    transform: scale(var(--hover-scale));
+    background-color: var(--hover-background-color) !important;
+}
