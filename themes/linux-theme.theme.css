@@ -1,0 +1,499 @@
+/**
+ * @name Verbessertes Linux-Terminal-Thema
+ * @version 1.0.4
+ * @description Ein professionelles, fortgeschrittenes Discord-Theme, inspiriert von farbenfrohen Linux-Terminal-Ästhetiken.
+ * @author cptcr
+ *
+ * @website https://cptcr.cc
+ * @invite cptcr
+ */
+
+/* Root Variables */
+:root {
+    --background-primary: #121212; /* Dunkler Hintergrund */
+    --background-secondary: #1D1F21; /* Leicht hellerer Hintergrund */
+    --background-tertiary: #282A2E; /* Tertiärer Hintergrund für Tiefe */
+    --text-primary: #C5C8C6; /* Hellgrauer Terminal-Text */
+    --text-secondary: #969896; /* Dunkelgrauer Text */
+    --accent-color-green: #8AE234; /* Grün für Akzente */
+    --accent-color-yellow: #FCE94F; /* Gelb für Akzente */
+    --accent-color-red: #EF2929; /* Rot für Akzente */
+    --accent-color-blue: #3465A4; /* Blau für Highlights */
+    --border-radius: 4px; /* Leicht abgerundete Ecken */
+    --font-family: 'DejaVu Sans Mono', 'Monaco', 'Courier New', monospace; /* Monospace-Schriftart */
+}
+
+/* Allgemeines Layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: var(--background-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color-blue);
+    border-radius: var(--border-radius);
+}
+
+/* Server-Liste */
+.guilds-wrapper {
+    background-color: var(--background-secondary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.guild {
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.guild:hover {
+    transform: scale(1.05);
+    background-color: var(--background-tertiary);
+}
+
+.guild .guild-inner {
+    border-radius: var(--border-radius);
+}
+
+/* Channel-Liste */
+.channels-wrap {
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.containerDefault-3WbVG9 {
+    padding: 0;
+}
+
+.container-1NXEtd {
+    margin: 0;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--background-tertiary);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+}
+
+.container-1NXEtd:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Channel-Nachrichten */
+.message-2qnXI6 {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid var(--background-tertiary);
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius);
+}
+
+.messageContent-2t3eCI {
+    color: var(--text-primary);
+}
+
+/* Chat-Textbox */
+.textarea-2Spzkt {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    resize: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    border: 1px solid var(--background-secondary);
+}
+
+.textarea-2Spzkt:focus {
+    border-color: var(--accent-color-green);
+    background-color: var(--background-secondary);
+}
+
+/* Chatbox-Container */
+.form-2fGMdU {
+    background-color: var(--background-primary);
+    border-top: 1px solid var(--background-tertiary);
+    padding: 10px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+/* Benutzerliste */
+.membersWrap-3NUR2t {
+    background-color: var(--background-secondary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.member-3-YXUe {
+    margin: 5px;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.member-3-YXUe:hover {
+    background-color: var(--background-tertiary);
+    transform: scale(1.05);
+}
+
+/* Modale Fenster */
+.modal-3HOjGZ {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+/* Buttons */
+.button-38aScr {
+    background-color: var(--accent-color-blue);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-38aScr:hover {
+    background-color: var(--accent-color-green);
+}
+
+/* Typografie */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color-blue);
+    font-family: var(--font-family);
+}
+
+p {
+    color: var(--text-secondary);
+    font-family: var(--font-family);
+}
+
+/* Header */
+.header-2yLD_y {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.header-2yLD_y:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Nachrichten-Bubbles */
+.message-2qnXI6 .content-3dzVd8 {
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Erwähnte Nachrichten */
+.mention-1f4fU {
+    background-color: var(--accent-color-red);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+/* Code-Blöcke */
+code {
+    background-color: var(--background-tertiary);
+    color: var(--accent-color-yellow);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+
+/* Links */
+a {
+    color: var(--accent-color-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Eingabefelder */
+input, textarea {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    background-color: var(--background-secondary);
+}
+
+/* Tooltips */
+.tooltip-2QfLtc {
+    background-color: var(--background-tertiary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-family: var(--font-family);
+}
+
+/* Popouts */
+.popout-2iWAc- {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+/* Tab-Leiste */
+.tabBar-3L2suc {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.tabBar-3L2suc .item-1Yvehc {
+    background-color: var(--background-tertiary);
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.tabBar-3L2suc .item-1Yvehc:hover {
+    background-color: var(--accent-color-green);
+}
+
+/* Kontextmenüs */
+.contextMenu-uoJTbz {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+.contextMenu-uoJTbz .item-1Yvehc {
+    background-color: var (--background-secondary);
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.contextMenu-uoJTbz .item-1Yvehc:hover {
+    background-color: var(--accent-color-red);
+}
+
+/* Schalter */
+.switch-3IjdEo {
+    background-color: var(--background-tertiary);
+    border-radius: var(--border-radius);
+    padding: 5px;
+}
+
+.switch-3IjdEo .handle-3F5vd0 {
+    background-color: var(--accent-color-blue);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.switch-3IjdEo.checked .handle-3F5vd0 {
+    background-color: var(--accent-color-green);
+}
+
+/* Benachrichtigungen */
+.notification-3klG02 {
+    background-color: var(--background-primary);
+    color: var (--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+/* Werkzeugleisten */
+.toolbar-1t6TWx {
+    background-color: var(--background-secondary);
+    color: var (--text-primary);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+/* Benutzer-Popouts */
+.userPopout-3XzG_A {
+    background-color: var (--background-secondary);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+}
+
+.userPopout-3XzG_A .header-2W83ur {
+    background-color: var (--background-tertiary);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+}
+
+/* Buttons */
+.button-38aScr, .button-38aScr .contents-3ca1mk {
+    background-color: var (--accent-color-blue);
+    color: var (--text-primary);
+    border-radius: var (--button-radius);
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-38aScr:hover, .button-38aScr .contents-3ca1mk:hover {
+    background-color: var (--accent-color-green);
+}
+
+/* Embeds */
+.embed-2mLykq {
+    background-color: var (--background-secondary);
+    border-left: 4px solid var (--accent-color-blue);
+    border-radius: var (--border-radius);
+    padding: 10px;
+}
+
+/* Benachrichtigungen */
+.notification-3klG02 {
+    background-color: var (--background-primary);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+    border-left: 4px solid var (--accent-color-blue);
+}
+
+/* Suchergebnisse */
+.searchResultsGroup-3v0XL- {
+    background-color: var (--background-secondary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.searchResult-3Pvl9V {
+    background-color: var (--background-tertiary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.searchResult-3Pvl9V:hover {
+    background-color: var (--highlight-background);
+}
+
+/* Erwähnungen */
+.mentioned-1gdfz0 {
+    background-color: var (--highlight-background);
+    color: var (--highlight-text);
+    border-radius: var (--border-radius);
+    padding: 10px;
+}
+
+/* Erwähnungs-Badges */
+.mentionBadge-1Nyy1l {
+    background-color: var (--accent-color-red);
+    color: var (--text-primary);
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* Pings */
+.ping-29_TN1 {
+    background-color: var (--accent-color-red);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 5px 10px;
+}
+
+/* Code-Blöcke */
+pre {
+    background-color: var (--background-secondary);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+/* Zitate */
+blockquote {
+    background-color: var (--background-tertiary);
+    color: var (--text-primary);
+    border-left: 4px solid var (--accent-color-blue);
+    border-radius: var (--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tabellen */
+table {
+    background-color: var (--background-tertiary);
+    color: var (--text-primary);
+    border-collapse: collapse;
+    border-radius: var (--border-radius);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    border: 1px solid var (--background-secondary);
+    padding: 8px;
+}
+
+table th {
+    background-color: var (--background-secondary);
+    color: var (--text-primary);
+}
+
+table tr:hover {
+    background-color: var (--background-secondary);
+}
+
+/* Formulare */
+form {
+    background-color: var (--background-secondary);
+    color: var (--text-primary);
+    border-radius: var (--border-radius);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+form input, form textarea, form select {
+    background-color: var (--background-tertiary);
+    color: var (--text-primary);
+    border: none;
+    border-radius: var (--border-radius);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    background-color: var (--background-secondary);
+}
